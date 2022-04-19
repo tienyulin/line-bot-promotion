@@ -3,9 +3,9 @@
 source 'https://rubygems.org'
 
 # Web
+gem 'json'
 gem 'puma'
 gem 'roda'
-gem 'slim'
 
 # Configuration
 gem 'figaro'
@@ -19,6 +19,8 @@ gem 'http'
 
 # Security
 gem 'bundler-audit'
+
+gem 'line-bot-api'
 
 # Development
 group :development do

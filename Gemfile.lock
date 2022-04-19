@@ -24,6 +24,8 @@ GEM
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
+    json (2.6.1)
+    line-bot-api (1.23.0)
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -49,13 +51,11 @@ GEM
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rbnacl (7.1.1)
-      ffi
     regexp_parser (2.1.1)
     rerun (0.13.1)
       listen (~> 3.0)
     rexml (3.2.5)
-    roda (3.44.0)
+    roda (3.54.0)
       rack
     rubocop (1.14.0)
       parallel (~> 1.10)
@@ -72,12 +72,7 @@ GEM
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
     ruby-progressbar (1.11.0)
-    slim (4.1.0)
-      temple (>= 0.7.6, < 0.9)
-      tilt (>= 2.0.6, < 2.1)
-    temple (0.8.2)
     thor (1.1.0)
-    tilt (2.0.10)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.7)
@@ -90,16 +85,16 @@ DEPENDENCIES
   bundler-audit
   figaro
   http
+  json
+  line-bot-api
   pry
   puma
   rack-test
   rake
-  rbnacl
   rerun
   roda
   rubocop
   rubocop-performance
-  slim
 
 BUNDLED WITH
    2.3.8

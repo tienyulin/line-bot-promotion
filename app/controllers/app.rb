@@ -29,9 +29,7 @@ module TienYuBot
           }
 
           signature = request.env['HTTP_X_LINE_SIGNATURE']
-          unless client.validate_signature(body, signature)
-            routing.halt 400
-          end
+          routing.halt 400 unless client.validate_signature(body, signature)
 
           events = client.parse_events_from(body)
           events.each do |event|
@@ -50,7 +48,7 @@ module TienYuBot
           end
 
           response.status = 200
-          { message: 'success'}.to_json
+          { message: 'success' }.to_json
         end
       end
     end

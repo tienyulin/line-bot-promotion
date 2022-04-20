@@ -31,7 +31,7 @@ module TienYuBot
         when Line::Bot::Event::Message
           case event.type
           when Line::Bot::Event::MessageType::Text
-            introduction = File.read('../sources/message/introduction.json')
+            introduction = File.read('app/sources/message/introduction.json')
             message = JSON.parse(introduction)
 
             user_id = event['source']['userId']

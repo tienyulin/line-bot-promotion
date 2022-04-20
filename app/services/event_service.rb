@@ -40,7 +40,8 @@ module TienYuBot
       end
     end
 
-    def filter_message(text)
+    private
+    def self.filter_message(text)
       message_file = nil
       case text
       when text.include?('自我介紹')

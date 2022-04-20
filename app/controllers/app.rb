@@ -2,7 +2,7 @@
 
 require 'roda'
 require 'json'
-require 'line/bot'
+require_relative '../services/line_bot_service'
 
 module TienYuBot
   # Web App
@@ -22,33 +22,18 @@ module TienYuBot
         routing.post do
           body = request.body.read
 
-          client = Line::Bot::Client.new { |config|
-            config.channel_id = App.config.LINE_CHANNEL_ID
-            config.channel_secret = App.config.LINE_CHANNEL_SECRET
-            config.channel_token = App.config.LINE_CHANNEL_TOKEN
-          }
+          client = LineBotService.new(App.config).client
 
           signature = request.env['HTTP_X_LINE_SIGNATURE']
           routing.halt 400 unless client.validate_signature(body, signature)
 
           events = client.parse_events_from(body)
-          events.each do |event|
-            case event
-            when Line::Bot::Event::Message
-              case event.type
-              when Line::Bot::Event::MessageType::Text
-                message = {
-                  type: 'text',
-                  text: event.message['text']
-                }
-
-                client.reply_message(event['replyToken'], message)
-              end
-            end
-          end
+          EventService.reply(client, events)
 
           response.status = 200
           { message: 'success' }.to_json
+        rescue StandardError => e
+          puts e.full_message
         end
       end
     end

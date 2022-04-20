@@ -8,10 +8,10 @@ module TienYuBot
     # Reply message to LINE client
     def self.reply(client, events)
       events.each do |event|
-        case event.type
-        when 'message'
-          case event.message['type']
-          when 'text'
+        case event
+        when Line::Bot::Event::Message
+          case event.type
+          when Line::Bot::Event::MessageType::Text
             message = {
               type: 'text',
               text: event.message['text']

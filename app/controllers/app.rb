@@ -28,7 +28,7 @@ module TienYuBot
           routing.halt 400 unless client.validate_signature(body, signature)
 
           events = client.parse_events_from(body)
-          EventService.reply(client, events)
+          EventService.push_message(client, events)
 
           response.status = 200
           { message: 'success' }.to_json

@@ -1,6 +1,6 @@
 {
     "type": "flex",
-    "altText": "我是林天佑",
+    "altText": "I am Tony",
     "contents": {
         "type": "bubble",
         "body": {
@@ -37,7 +37,7 @@
                             "contents": [
                                 {
                                     "type": "span",
-                                    "text": "林天佑",
+                                    "text": "Tony Lin",
                                     "weight": "bold",
                                     "color": "#000000"
                                 }
@@ -55,7 +55,7 @@
                                     "contents": [
                                         {
                                             "type": "text",
-                                            "text": "清華大學",
+                                            "text": "NTHU",
                                             "wrap": true,
                                             "size": "sm",
                                             "color": "#ffffff",
@@ -86,7 +86,7 @@
                                     "contents": [
                                         {
                                             "type": "text",
-                                            "text": "軟體工程師",
+                                            "text": "SWE",
                                             "wrap": true,
                                             "size": "sm",
                                             "color": "#ffffff",
@@ -109,7 +109,7 @@
                             "contents": [
                                 {
                                     "type": "span",
-                                    "text": "後端系統開發，熟悉 Web API 和資料庫。 並有撰寫測試、docker 容器化及建立 CI/CD 的經驗。"
+                                    "text": "Web Developer specializing in backend development. Familiar with Web API and Database. Also, experience in building CI/CD pipeline with docker testing and deployment."
                                 }
                             ],
                             "size": "sm",

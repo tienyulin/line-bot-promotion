@@ -1,6 +1,6 @@
 {
     "type": "flex",
-    "altText": "我目前就讀於清華大學",
+    "altText": "I am currently a master student at National Tsing Hua University.",
     "contents": {
         "type": "carousel",
         "contents": [
@@ -20,14 +20,14 @@
                     "contents": [
                         {
                             "type": "text",
-                            "text": "清華大學",
+                            "text": "National Tsing Hua University",
                             "weight": "bold",
                             "size": "sm",
                             "wrap": true
                         },
                         {
                             "type": "text",
-                            "text": "服務科學研究所 - 資訊系統組",
+                            "text": "Institute of Service Science - Information System",
                             "size": "xs",
                             "color": "#8c8c8c",
                             "margin": "md",
@@ -62,14 +62,14 @@
                     "contents": [
                         {
                             "type": "text",
-                            "text": "輔仁大學",
+                            "text": "Fu Jen Catholic University",
                             "weight": "bold",
                             "size": "sm",
                             "wrap": true
                         },
                         {
                             "type": "text",
-                            "text": "資訊工程學系",
+                            "text": "Computer Science",
                             "size": "xs",
                             "color": "#8c8c8c",
                             "margin": "md",

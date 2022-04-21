@@ -27,7 +27,15 @@
                         },
                         {
                             "type": "text",
-                            "text": "Institute of Service Science - Information System",
+                            "text": "Institute of Service Science",
+                            "size": "xs",
+                            "color": "#8c8c8c",
+                            "margin": "md",
+                            "flex": 0
+                        },
+                        {
+                            "type": "text",
+                            "text": "Major in Information System",
                             "size": "xs",
                             "color": "#8c8c8c",
                             "margin": "md",

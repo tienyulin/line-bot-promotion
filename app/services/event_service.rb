@@ -15,7 +15,7 @@ module TienYuBot
           when Line::Bot::Event::MessageType::Text
             message = {
               type: 'text',
-              text: '您好，我是林天佑，請透過下方選單進行點選，我將向您介紹關於我的經歷和能力。'
+              text: 'Hi I am Tony. Please click the menu, I will show you myself.'
             }
 
             EventRepository.reply_message(client, event['replyToken'], message)
@@ -44,20 +44,20 @@ module TienYuBot
     def self.filter_message(text)
       message_file = nil
 
-      if text.include?('自我介紹')
+      if text.include?('introduce')
         message_file = File.read('app/sources/message/introduction.json')
-      elsif text.include?('工作經驗')
+      elsif text.include?('working experience')
         message_file = File.read('app/sources/message/work.json')
-      elsif text.include?('大學')
+      elsif text.include?('school')
         message_file = File.read('app/sources/message/education.json')
-      elsif text.include?('專案')
+      elsif text.include?('projects')
         message_file = File.read('app/sources/message/projects.json')
-      elsif text.include?('能力')
+      elsif text.include?('ability')
         message_file = File.read('app/sources/message/skills.json')
-      elsif text.include?('人格特質')
+      elsif text.include?('personalities')
         message_file = File.read('app/sources/message/personality.json')
       else
-        return { type: 'text', text: '您好，我是林天佑，請透過下方選單進行點選，我將向您介紹關於我的經歷和能力。' }
+        return { type: 'text', text: 'Hi I am Tony. Please click the menu, I will show you myself.' }
       end
 
       JSON.parse(message_file)

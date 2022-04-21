@@ -1,131 +1,101 @@
 {
     "type": "flex",
-    "altText": "我是林天佑",
+    "altText": "These are the details of my projects",
     "contents": {
-        "type": "bubble",
-        "body": {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-                {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [
-                        {
-                            "type": "image",
-                            "aspectMode": "cover",
-                            "size": "full",
-                            "url": "https://i.imgur.com/RYgULw3.jpg"
-                        }
-                    ],
-                    "cornerRadius": "100px",
-                    "width": "150px",
-                    "height": "150px",
-                    "background": {
-                        "type": "linearGradient",
-                        "angle": "0deg",
-                        "startColor": "#ffffff",
-                        "endColor": "#ffffff"
-                    }
-                },
-                {
+        "type": "carousel",
+        "contents": [
+            {
+                "type": "bubble",
+                "size": "kilo",
+                "body": {
                     "type": "box",
                     "layout": "vertical",
                     "contents": [
                         {
                             "type": "text",
-                            "contents": [
-                                {
-                                    "type": "span",
-                                    "text": "林天佑",
-                                    "weight": "bold",
-                                    "color": "#000000"
-                                }
-                            ],
-                            "size": "xl",
-                            "align": "center"
-                        },
-                        {
-                            "type": "box",
-                            "layout": "horizontal",
-                            "contents": [
-                                {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [
-                                        {
-                                            "type": "text",
-                                            "text": "清華大學",
-                                            "wrap": true,
-                                            "size": "sm",
-                                            "color": "#ffffff",
-                                            "align": "center",
-                                            "gravity": "center"
-                                        }
-                                    ],
-                                    "backgroundColor": "#0000c9",
-                                    "borderWidth": "light",
-                                    "alignItems": "center",
-                                    "cornerRadius": "md",
-                                    "width": "70px"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [],
-                                    "backgroundColor": "#ffffff",
-                                    "borderWidth": "light",
-                                    "alignItems": "center",
-                                    "cornerRadius": "md",
-                                    "width": "10px",
-                                    "height": "0px"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [
-                                        {
-                                            "type": "text",
-                                            "text": "軟體工程師",
-                                            "wrap": true,
-                                            "size": "sm",
-                                            "color": "#ffffff",
-                                            "align": "center",
-                                            "gravity": "center"
-                                        }
-                                    ],
-                                    "backgroundColor": "#0000c9",
-                                    "borderWidth": "light",
-                                    "alignItems": "center",
-                                    "cornerRadius": "md",
-                                    "width": "75px"
-                                }
-                            ],
-                            "alignItems": "center",
-                            "justifyContent": "center"
-                        },
-                        {
-                            "type": "text",
-                            "contents": [
-                                {
-                                    "type": "span",
-                                    "text": "後端系統開發，熟悉 Web API 和資料庫。 並有撰寫測試、docker 容器化及建立 CI/CD 的經驗。"
-                                }
-                            ],
+                            "text": "FlooFloo",
+                            "weight": "bold",
                             "size": "sm",
-                            "align": "start",
-                            "offsetTop": "xs",
                             "wrap": true
+                        },
+                        {
+                            "type": "text",
+                            "text": " A web application to raise awareness and facilitate help for social or natural on-going/impromptu issues that  require help, such as influenza, disaster, climate change, etc.",
+                            "size": "xs",
+                            "color": "#8c8c8c",
+                            "margin": "md",
+                            "flex": 0,
+                            "wrap": true
+                        },
+                        {
+                            "type": "text",
+                            "size": "xs",
+                            "color": "#000000",
+                            "margin": "md",
+                            "flex": 0,
+                            "wrap": true,
+                            "text": "1.  Built web API and App using Ruby and Roda, implemented Domain Driven Design and Testing."
+                        },
+                        {
+                            "type": "text",
+                            "size": "xs",
+                            "color": "#000000",
+                            "margin": "md",
+                            "flex": 0,
+                            "wrap": true,
+                            "text": "2.  Built CI/CD pipeline to ensure the code quality, containerize the service, and deploy to Heroku automatically."
                         }
                     ],
-                    "paddingEnd": "lg",
-                    "width": "200px",
-                    "offsetBottom": "xs",
-                    "spacing": "none",
-                    "margin": "xxl"
+                    "spacing": "sm",
+                    "paddingAll": "13px"
                 }
-            ],
-            "alignItems": "center"
-        }
+            },
+            {
+                "type": "bubble",
+                "size": "kilo",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "text",
+                            "text": "ZetaCal",
+                            "weight": "bold",
+                            "size": "sm",
+                            "wrap": true
+                        },
+                        {
+                            "type": "text",
+                            "text": "A web application that through the permissions of common calendars such as Google and Apple, compare the time and schedule a meeting.",
+                            "size": "xs",
+                            "color": "#8c8c8c",
+                            "margin": "md",
+                            "flex": 0,
+                            "wrap": true
+                        },
+                        {
+                            "type": "text",
+                            "size": "xs",
+                            "color": "#000000",
+                            "margin": "md",
+                            "flex": 0,
+                            "wrap": true,
+                            "text": "1. Built web API and App using Ruby and Roda. Encrypted the data in database to avoid data leak. Using Redis for distributed sessions. Implemented token-based authorization and OAuth."
+                        },
+                        {
+                            "type": "text",
+                            "size": "xs",
+                            "color": "#000000",
+                            "margin": "md",
+                            "flex": 0,
+                            "wrap": true,
+                            "text": "2. Built CI/CD pipeline to ensure the code quality, and deploy to Heroku automatically."
+                        }
+                    ],
+                    "spacing": "sm",
+                    "paddingAll": "13px"
+                }
+            }
+        ]
     }
 }

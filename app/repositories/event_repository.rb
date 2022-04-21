@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# require_relative 'line_bot_service'
 
 module TienYuBot
   # Line Event Repository

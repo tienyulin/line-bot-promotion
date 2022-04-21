@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-
 module TienYuBot
   # Line Event Repository
   class EventRepository
